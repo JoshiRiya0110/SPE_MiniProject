@@ -26,7 +26,7 @@ pipeline {
 	stage('Push Docker Images') {
             steps {
                 script{
-                    docker.withRegistry('', 'DockerHubCred') {
+                    docker.withRegistry('', 'docker-hub-credential') {
                     sh 'docker tag calculator_img joshiriya/calculator_img:latest'
                     sh 'docker push joshiriya/calculator_img'
                     }
