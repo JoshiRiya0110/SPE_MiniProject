@@ -19,4 +19,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker run -it -d --name calculator joshiriya/calculator_img
+      shell: docker run -it -d --name ContainerCalculator joshiriya/calculator_img
